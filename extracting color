@@ -1,0 +1,36 @@
+# trying to extract colors from damien hirst image using colorgram. 
+#from list of tuples, trying to make function to extract colors that are white or close to it.
+#number with (r,g,b) values close to 255 read as white.
+
+
+
+
+import colorgram
+
+# rgb_colors = []
+# colors = colorgram.extract("hirstspotpainting.jpg",30)
+#
+# for color in colors:
+#     r = color.rgb.r
+#     b = color.rgb.b
+#     g = color.rgb.g
+#     new_color = (r, g, b)
+#     rgb_colors.append(new_color)
+#
+#
+# print(rgb_colors)
+
+list1 = [
+(246, 242, 234), (248, 241, 245), (239, 247, 241), (239, 242, 247), (197, 166, 116), (141, 80, 57), (219, 201, 139),
+(60, 93, 118), (164, 151, 53), (136, 162, 182), (130, 34, 23), (52, 116, 86), (71, 37, 30), (192, 95, 79),
+(145, 178, 149), (22, 91, 70), (164, 142, 156), (111, 75, 80), (227, 175, 164), (28, 58, 75), (58, 40, 43),
+(135, 25, 31), (179, 204, 173), (27, 81, 88), (18, 68, 57), (89, 146, 127), (43, 66, 87), (168, 102, 106),
+(224, 174, 179), (114, 127, 145)
+]
+list2 = []
+for item in list1:
+    if item >= (0, 300, 300):
+
+            list2.append(item)
+            print(list2)
+#look at how tuples are compared to each other. reprint to understand
